@@ -217,7 +217,7 @@ concat_lines() {
 }
 
 export MAVEN_PROJECTBASEDIR=${MAVEN_BASEDIR:-$(find_maven_basedir)}
-MAVEN_OPTS="$(concat_lines "$MAVEN_PROJECTBASEDIR/.mvn/jvm.config") $MAVEN_OPTS -javaagent:$MAVEN_PROJECTBASEDIR/h2h/h2hell-distribution/h2hell-core-1.0.5-SNAPSHOT.jar -Djava.ext.dirs=$MAVEN_PROJECTBASEDIR/h2h/h2hell-distribution/ -DH2H_CONFIG=$MAVEN_PROJECTBASEDIR/h2h/h2hell-distribution/config.properties"
+MAVEN_OPTS="$(concat_lines "$MAVEN_PROJECTBASEDIR/.mvn/jvm.config") $MAVEN_OPTS -javaagent:$MAVEN_PROJECTBASEDIR/h2h/h2hell-distribution/h2hell-core-1.0.5.jar -Djava.ext.dirs=$MAVEN_PROJECTBASEDIR/h2h/h2hell-distribution/ -DH2H_CONFIG=$MAVEN_PROJECTBASEDIR/h2h/h2hell-distribution/config.properties"
 
 # Provide a "standardized" way to retrieve the CLI args that will
 # work with both Windows and non-Windows executions.
